@@ -1,8 +1,7 @@
-// @ts-check
-
 import eslint from '@eslint/js'
 import eslintPluginAstro from 'eslint-plugin-astro'
 import simpleImportSort from 'eslint-plugin-simple-import-sort'
+import tailwind from 'eslint-plugin-tailwindcss'
 import tseslint from 'typescript-eslint'
 
 export default tseslint.config(
@@ -17,5 +16,6 @@ export default tseslint.config(
       'simple-import-sort/imports': 'error',
       'simple-import-sort/exports': 'error',
     },
-  }
+  },
+  ...tailwind.configs['flat/recommended']
 )
