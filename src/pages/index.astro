@@ -1,14 +1,13 @@
 ---
+import Interactive from './Interactive.svelte'
 import Header from '$lib/components/Header.astro'
 import Layout from '$lib/layouts/Layout.astro'
-
-import Interactive from './Interactive.svelte'
 ---
 
 <Layout title="Welcome to Astro.">
   <Header />
   <main class="">
-    <p class="text-4xl text-cyan-800">test</p>
+    <p>Test</p>
     <Interactive client:load />
   </main>
 </Layout>
